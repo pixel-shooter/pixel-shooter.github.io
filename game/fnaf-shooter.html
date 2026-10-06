@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
 
 <head>
@@ -24,23 +24,7 @@
     <link rel="stylesheet" href="../css/modern-theme.css" />
 
     <!-- Structured Data: VideoGame Schema -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "VideoGame",
-            "name": "FNaF Shooter",
-            "description": "Explore eerie darkened pizzerias, conserve flashlight batteries, and unleash devastating shotguns against Freddy and his terrifying crew.",
-            "image": "https://pixel-shooter.github.io/img/fnaf-shooter.png",
-            "genre": ["Shooting", "Action", "Precision Shooter", "Unblocked Game"],
-            "operatingSystem": "Any web browser (Chromebook, Windows, Mac, Linux, Mobile)",
-            "applicationCategory": "BrowserGame",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "ratingCount": "1,840"
-            }
-        }
-    </script>
+    <script src="../js/game-schema.js"></script>
 </head>
 
 <body>
@@ -98,12 +82,26 @@
                     </svg>
                     <span>Car</span>
                 </a>
+                <a class="nav-pill" href="../catology/sports.html" title="Sports Games">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z" />
+                    </svg>
+                    <span>Sports</span>
+                </a>
                 <a class="nav-pill" href="../catology/puzzle.html" title="Puzzle Games">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M19 13h-2v-2h2c1.1 0 2-.9 2-2s-.9-2-2-2h-2V5c0-1.1-.9-2-2-2h-2v2h-2V3H9c-1.1 0-2 .9-2 2v2H5c-1.1 0-2 .9-2 2s.9 2 2 2h2v2H5c-1.1 0-2 .9-2 2s.9 2 2 2h2v2c0 1.1.9 2 2 2h2v-2h2v2h2c1.1 0 2-.9 2-2v-2h2c1.1 0 2-.9 2-2s-.9-2-2-2z" />
                     </svg>
                     <span>Puzzle</span>
+                </a>
+                <a class="nav-pill" href="../catology/other.html" title="Other Games">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                    </svg>
+                    <span>Other</span>
                 </a>
             </nav>
 
@@ -205,142 +203,108 @@
 
                 <!-- Right: Similar Games Sidebar -->
                 <aside class="similar-games-sidebar">
-                    <div class="sidebar-header">
-                        <h2 class="sidebar-title">
-                            <svg class="sidebar-title-icon" viewBox="0 0 24 24">
-                                <path
-                                    d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
-                            </svg>
-                            SIMILAR GAMES
-                        </h2>
-                        <span class="sidebar-count-badge">8 Games</span>
-                    </div>
-                    <div class="similar-games-scroll">
-                        <a class="similar-card" href="../index.html" title="Pixel Shooter">
+                    <div class="similar-games-list">
+                        <a class="similar-card" href="./fps-assault-shooter.html" title="FPS Assault Shooter">
                             <div class="similar-card-thumb">
-                                <img src="../img/pixel-shooter.png" alt="Pixel Shooter"
-                                    loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
+                                <img src="../img/fps-assault-shooter.png" alt="FPS Assault Shooter" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
                             </div>
                             <div class="similar-card-info">
-                                <div class="similar-card-title">Pixel Shooter</div>
+                                <div class="similar-card-title">FPS Assault Shooter</div>
                                 <div class="similar-card-meta">
-                                    <span class="similar-badge">Action</span>
+                                    <span class="similar-badge">Tactical</span>
                                     <span>&#9733; 4.9</span>
                                 </div>
                             </div>
                         </a>
-                        <a class="similar-card" href="./time-shooter-2.html" title="Time Shooter 2">
+                        <a class="similar-card" href="./fps-io.html" title="FPS.io">
                             <div class="similar-card-thumb">
-                                <img src="../img/time-shooter-2.png"
-                                    alt="Time Shooter 2" loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
+                                <img src="../img/fps-io.png" alt="FPS.io" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
                             </div>
                             <div class="similar-card-info">
-                                <div class="similar-card-title">Time Shooter 2</div>
+                                <div class="similar-card-title">FPS.io</div>
                                 <div class="similar-card-meta">
-                                    <span class="similar-badge">Shooter</span>
-                                    <span>&#9733; 4.9</span>
+                                    <span class="similar-badge">Multiplayer</span>
+                                    <span>&#9733; 4.7</span>
                                 </div>
                             </div>
                         </a>
-                        <a class="similar-card" href="./funny-shooter-2.html" title="Funny Shooter 2">
+                        <a class="similar-card" href="./funny-battle.html" title="Funny Battle Simulator">
                             <div class="similar-card-thumb">
-                                <img src="../img/funny-shooter-2.png"
-                                    alt="Funny Shooter 2" loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
+                                <img src="../img/funny-battle.png" alt="Funny Battle Simulator" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
                             </div>
                             <div class="similar-card-info">
-                                <div class="similar-card-title">Funny Shooter 2</div>
+                                <div class="similar-card-title">Funny Battle Simulator</div>
                                 <div class="similar-card-meta">
-                                    <span class="similar-badge">Action</span>
-                                    <span>&#9733; 4.9</span>
+                                    <span class="similar-badge">Strategy</span>
+                                    <span>&#9733; 4.7</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="similar-card" href="./getaway-shootout.html" title="Getaway Shootout">
+                            <div class="similar-card-thumb">
+                                <img src="../img/getaway-shootout.png" alt="Getaway Shootout" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                            </div>
+                            <div class="similar-card-info">
+                                <div class="similar-card-title">Getaway Shootout</div>
+                                <div class="similar-card-meta">
+                                    <span class="similar-badge">2 Player</span>
+                                    <span>&#9733; 4.8</span>
                                 </div>
                             </div>
                         </a>
                         <a class="similar-card" href="./gunspin.html" title="GunSpin">
                             <div class="similar-card-thumb">
-                                <img src="../img/gunspin.png"
-                                    alt="GunSpin" loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
+                                <img src="../img/gunspin.png" alt="GunSpin" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
                             </div>
                             <div class="similar-card-info">
                                 <div class="similar-card-title">GunSpin</div>
                                 <div class="similar-card-meta">
-                                    <span class="similar-badge">Arcade</span>
+                                    <span class="similar-badge">Physics</span>
                                     <span>&#9733; 4.8</span>
                                 </div>
                             </div>
                         </a>
-                        <a class="similar-card" href="./fps-assault-shooter.html" title="FPS Assault Shooter">
+                        <a class="similar-card" href="./military-shooter-training.html" title="Military Shooter Training">
                             <div class="similar-card-thumb">
-                                <img src="../img/fps-assault-shooter.png"
-                                    alt="FPS Assault Shooter" loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
+                                <img src="../img/military-shooter-training.png" alt="Military Shooter Training" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
                             </div>
                             <div class="similar-card-info">
-                                <div class="similar-card-title">FPS Assault Shooter</div>
+                                <div class="similar-card-title">Military Shooter Training</div>
                                 <div class="similar-card-meta">
-                                    <span class="similar-badge">Shooter</span>
-                                    <span>&#9733; 4.9</span>
+                                    <span class="similar-badge">Sniper</span>
+                                    <span>&#9733; 4.7</span>
                                 </div>
                             </div>
                         </a>
-                        <a class="similar-card" href="./archery-2.html" title="Archery 2">
+                        <a class="similar-card" href="./mine-shooter.html" title="Mine Shooter: Huggy Attack">
                             <div class="similar-card-thumb">
-                                <img src="../img/archery-2.png"
-                                    alt="Archery 2" loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
+                                <img src="../img/mine-shooter.png" alt="Mine Shooter: Huggy Attack" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
                             </div>
                             <div class="similar-card-info">
-                                <div class="similar-card-title">Archery 2</div>
+                                <div class="similar-card-title">Mine Shooter: Huggy Attack</div>
                                 <div class="similar-card-meta">
-                                    <span class="similar-badge">Skill</span>
+                                    <span class="similar-badge">Voxel</span>
                                     <span>&#9733; 4.8</span>
                                 </div>
                             </div>
                         </a>
-                        <a class="similar-card" href="./rooftop-shooters.html" title="Rooftop Shooters">
+                        <a class="similar-card" href="./mr-bullet-2-online.html" title="Mr Bullet 2 Online">
                             <div class="similar-card-thumb">
-                                <img src="../img/rooftop-shooters.png"
-                                    alt="Rooftop Shooters" loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
+                                <img src="../img/mr-bullet-2-online.png" alt="Mr Bullet 2 Online" loading="lazy" />
+                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
                             </div>
                             <div class="similar-card-info">
-                                <div class="similar-card-title">Rooftop Shooters</div>
+                                <div class="similar-card-title">Mr Bullet 2 Online</div>
                                 <div class="similar-card-meta">
-                                    <span class="similar-badge">Action</span>
-                                    <span>&#9733; 4.8</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./zombie-shooter-3d-1.html" title="Zombie Shooter 3D">
-                            <div class="similar-card-thumb">
-                                <img src="../img/zombie-shooter-3d-1.png"
-                                    alt="Zombie Shooter 3D" loading="lazy" />
-                                <div class="similar-play-overlay"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Zombie Shooter 3D</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Horror</span>
-                                    <span>&#9733; 4.8</span>
+                                    <span class="similar-badge">Puzzle</span>
+                                    <span>&#9733; 4.7</span>
                                 </div>
                             </div>
                         </a>
@@ -348,11 +312,237 @@
                 </aside>
             </div>
 
-            <!-- SECTION 1: Game Description & How to Play (MÃ´ Táº£ Vá» Game & CÃ¡ch ChÆ¡i Game) -->
+            <!-- Popular Games Grid -->
+            <section class="popular-games-section" id="more-game">
+                <div class="section-title-bar">
+                    <h2 class="section-heading">
+                        <svg class="section-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z" />
+                        </svg>
+                        POPULAR GAMES
+                    </h2>
+                </div>
+
+                <div class="popular-games-grid">
+                    <!-- 1. Mr Bullet 3D -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./mr-bullet-3d.html" title="Mr Bullet 3D">
+                            <figure class="image-card-game">
+                                <img src="../img/mr-bullet-3d.png" title="Mr Bullet 3D" alt="Mr Bullet 3D" loading="lazy" />
+                                <span class="game-badge-featured popular">&#128083; 3D SNIPER</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Mr Bullet 3D</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 2. Mr Bullet -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./mr-bullet.html" title="Mr Bullet">
+                            <figure class="image-card-game">
+                                <img src="../img/mr-bullet.png" title="Mr Bullet" alt="Mr Bullet" loading="lazy" />
+                                <span class="game-badge-featured popular">&#129504; PUZZLE TRICK</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Mr Bullet</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 3. Ninja Clash Heroes -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./ninja-clash-heroes.html" title="Ninja Clash Heroes">
+                            <figure class="image-card-game">
+                                <img src="../img/ninja-clash-heroes.png" title="Ninja Clash Heroes" alt="Ninja Clash Heroes" loading="lazy" />
+                                <span class="game-badge-featured hot">&#129399; FEUDAL COMBAT</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Ninja Clash Heroes</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 4. Piñata Masters -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./pinatamasters.html" title="Piñata Masters">
+                            <figure class="image-card-game">
+                                <img src="../img/pinatamasters.png" title="Piñata Masters" alt="Piñata Masters" loading="lazy" />
+                                <span class="game-badge-featured speed">&#127881; WEAPON TAPPER</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Piñata Masters</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 5. Pixel Shooter -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./pixel-shooter.html" title="Pixel Shooter">
+                            <figure class="image-card-game">
+                                <img src="../img/pixel-shooter.png" title="Pixel Shooter" alt="Pixel Shooter" loading="lazy" />
+                                <span class="game-badge-featured hot">&#128081; #1 FLAGSHIP</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Pixel Shooter</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 6. Raft Wars 2 -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./raft-wars-2.html" title="Raft Wars 2">
+                            <figure class="image-card-game">
+                                <img src="../img/raft-wars-2.png" title="Raft Wars 2" alt="Raft Wars 2" loading="lazy" />
+                                <span class="game-badge-featured speed">&#127754; WATER TURF</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Raft Wars 2</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 7. Raft Wars -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./raft-wars.html" title="Raft Wars">
+                            <figure class="image-card-game">
+                                <img src="../img/raft-wars.png" title="Raft Wars" alt="Raft Wars" loading="lazy" />
+                                <span class="game-badge-featured popular">&#128741; CANNON FIGHT</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Raft Wars</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 8. Rooftop Shooters -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./rooftop-shooters.html" title="Rooftop Shooters">
+                            <figure class="image-card-game">
+                                <img src="../img/rooftop-shooters.png" title="Rooftop Shooters" alt="Rooftop Shooters" loading="lazy" />
+                                <span class="game-badge-featured hot">&#127970; 2 PLAYER DUEL</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Rooftop Shooters</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 9. Rooftop Snipers -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./rooftop-snipers.html" title="Rooftop Snipers">
+                            <figure class="image-card-game">
+                                <img src="../img/rooftop-snipers.png" title="Rooftop Snipers" alt="Rooftop Snipers" loading="lazy" />
+                                <span class="game-badge-featured popular">&#127919; SNIPER DUEL</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Rooftop Snipers</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 10. Strike Force Heroes -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./strike-force-heroes.html" title="Strike Force Heroes">
+                            <figure class="image-card-game">
+                                <img src="../img/strike-force-heroes.png" title="Strike Force Heroes" alt="Strike Force Heroes" loading="lazy" />
+                                <span class="game-badge-featured hot">&#128737; HERO CAMPAIGN</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Strike Force Heroes</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 11. Time Shooter 2 -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./time-shooter-2.html" title="Time Shooter 2">
+                            <figure class="image-card-game">
+                                <img src="../img/time-shooter-2.png" title="Time Shooter 2" alt="Time Shooter 2" loading="lazy" />
+                                <span class="game-badge-featured speed">&#9201; TIME IN MOTION</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Time Shooter 2</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 12. Time Shooter 3: SWAT -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./time-shooter-3-swat.html" title="Time Shooter 3: SWAT">
+                            <figure class="image-card-game">
+                                <img src="../img/time-shooter-3-swat.png" title="Time Shooter 3: SWAT" alt="Time Shooter 3: SWAT" loading="lazy" />
+                                <span class="game-badge-featured hot">&#128737; SWAT TACTICS</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Time Shooter 3: SWAT</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 13. Tiny Rifles -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./tiny-rifles.html" title="Tiny Rifles">
+                            <figure class="image-card-game">
+                                <img src="../img/tiny-rifles.png" title="Tiny Rifles" alt="Tiny Rifles" loading="lazy" />
+                                <span class="game-badge-featured popular">&#129696; TRENCH WARFARE</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Tiny Rifles</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 14. Xmas Rooftop Battles -->
+                    <div class="throw-game">
+                        <a class="card-game" href="./xmas-rooftop-battles.html" title="Xmas Rooftop Battles">
+                            <figure class="image-card-game">
+                                <img src="../img/xmas-rooftop-battles.png" title="Xmas Rooftop Battles" alt="Xmas Rooftop Battles" loading="lazy" />
+                                <span class="game-badge-featured speed">&#127877; HOLIDAY WAR</span>
+                                <div class="game-card-hover-overlay">
+                                    <div class="play-hint-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></div>
+                                </div>
+                            </figure>
+                            <div class="title-card-game">
+                                <div class="title-name"><span class="text-overflow">Xmas Rooftop Battles</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 1: Game Description and How to Play -->
             <section class="game-info-section" aria-label="Game Description and How to Play Guide"
                 style="margin-top: 30px;">
                 <div class="info-cards-grid">
-                    <!-- Card 1: MÃ´ Táº£ Vá» Game (Game Description) -->
+                    <!-- Card 1: Game Description -->
                     <article class="info-card">
                         <div class="info-card-header">
                             <svg class="info-header-icon" viewBox="0 0 24 24">
@@ -375,7 +565,7 @@
                         </div>
                     </article>
 
-                    <!-- Card 2: CÃ¡ch ChÆ¡i Game & Báº£ng PhÃ­m Äiá»u Khiá»ƒn (How to Play & Controls) -->
+                    <!-- Card 2: How to Play and Controls -->
                     <article class="info-card">
                         <div class="info-card-header">
                             <svg class="info-header-icon" viewBox="0 0 24 24">
@@ -428,11 +618,11 @@
                 </div>
             </section>
 
-            <!-- SECTION 2: Website Introduction & SEO Unblocked Guide (Giá»›i Thiá»‡u Trang Web Chuáº©n SEO) -->
+            <!-- SECTION 2: Website Introduction and SEO Unblocked Guide -->
             <section class="game-info-section" aria-label="Unblocked Websites for School Guide"
                 style="margin-top: 24px;">
                 <div class="info-cards-grid">
-                    <!-- Card 3: Giá»›i Thiá»‡u Cá»•ng Game Chuáº©n SEO TrÆ°á»ng Há»c -->
+                    <!-- Card 3: School Unblocked Game Portal -->
                     <article class="info-card">
                         <div class="info-card-header">
                             <svg class="info-header-icon" viewBox="0 0 24 24">
@@ -462,7 +652,7 @@
                         </div>
                     </article>
 
-                    <!-- Card 4: VÃ¬ Sao Há»c Sinh & NhÃ  TrÆ°á»ng Lá»±a Chá»n Pixel Shooter -->
+                    <!-- Card 4: Why Students Choose Pixel Shooter -->
                     <article class="info-card">
                         <div class="info-card-header">
                             <svg class="info-header-icon" viewBox="0 0 24 24">
@@ -507,352 +697,6 @@
         </div>
     </main>
 
-    <!-- More Unblocked Games Bento Grid -->
-    <section class="more-games-section" id="more-game" style="margin-top: 30px;">
-        <div class="container">
-            <div class="section-title-bar">
-                <h2 class="section-heading">
-                    <svg class="section-icon" viewBox="0 0 24 24">
-                        <path
-                            d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" />
-                    </svg>
-                    MORE UNBLOCKED GAMES FOR SCHOOL
-                </h2>
-                <span class="more-game-badge">18 Games</span>
-            </div>
-
-            <div class="d-r-flex flow-game flow-game-compact">
-                <!-- 1. Featured Big: Pixel Shooter -->
-                <div class="throw-game featured-big">
-                    <a class="card-game" href="../index.html" title="Pixel Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/pixel-shooter.png" title="Pixel Shooter"
-                                alt="Pixel Shooter" loading="lazy" />
-                            <span class="game-badge-featured hot">&#128293; FLAGSHIP</span>
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Pixel Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 2. Time Shooter 2 -->
-                <div class="throw-game">
-                    <a class="card-game" href="./time-shooter-2.html" title="Time Shooter 2">
-                        <figure class="image-card-game">
-                            <img src="../img/time-shooter-2.png"
-                                title="Time Shooter 2" alt="Time Shooter 2" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Time Shooter 2</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 3. Funny Shooter 2 -->
-                <div class="throw-game">
-                    <a class="card-game" href="./funny-shooter-2.html" title="Funny Shooter 2">
-                        <figure class="image-card-game">
-                            <img src="../img/funny-shooter-2.png"
-                                title="Funny Shooter 2" alt="Funny Shooter 2" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Funny Shooter 2</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 4. Featured Big: GunSpin -->
-                <div class="throw-game featured-big">
-                    <a class="card-game" href="./gunspin.html" title="GunSpin">
-                        <figure class="image-card-game">
-                            <img src="../img/gunspin.png"
-                                title="GunSpin" alt="GunSpin" loading="lazy" />
-                            <span class="game-badge-featured popular">&#128081; TOP LAUNCHER</span>
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">GunSpin</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 5. FPS Assault Shooter -->
-                <div class="throw-game">
-                    <a class="card-game" href="./fps-assault-shooter.html" title="FPS Assault Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/fps-assault-shooter.png"
-                                title="FPS Assault Shooter" alt="FPS Assault Shooter" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">FPS Assault Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 6. Archery 2 -->
-                <div class="throw-game">
-                    <a class="card-game" href="./archery-2.html" title="Archery 2">
-                        <figure class="image-card-game">
-                            <img src="../img/archery-2.png"
-                                title="Archery 2" alt="Archery 2" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Archery 2</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 7. Featured Big: Time Shooter 3: SWAT -->
-                <div class="throw-game featured-big">
-                    <a class="card-game" href="./time-shooter-3-swat.html" title="Time Shooter 3: SWAT">
-                        <figure class="image-card-game">
-                            <img src="../img/time-shooter-3-swat.png"
-                                title="Time Shooter 3: SWAT" alt="Time Shooter 3: SWAT" loading="lazy" />
-                            <span class="game-badge-featured hot">&#128293; SWAT COMBAT</span>
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Time Shooter 3: SWAT</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 8. Rooftop Shooters -->
-                <div class="throw-game">
-                    <a class="card-game" href="./rooftop-shooters.html" title="Rooftop Shooters">
-                        <figure class="image-card-game">
-                            <img src="../img/rooftop-shooters.png"
-                                title="Rooftop Shooters" alt="Rooftop Shooters" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Rooftop Shooters</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 9. Zombie Shooter 3D -->
-                <div class="throw-game">
-                    <a class="card-game" href="./zombie-shooter-3d-1.html" title="Zombie Shooter 3D">
-                        <figure class="image-card-game">
-                            <img src="../img/zombie-shooter-3d-1.png"
-                                title="Zombie Shooter 3D" alt="Zombie Shooter 3D" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Zombie Shooter 3D</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 10. Featured Big: Zombies Shooter 2 -->
-                <div class="throw-game featured-big">
-                    <a class="card-game" href="./zombies-shooter-part-2.html" title="Zombies Shooter: Part 2">
-                        <figure class="image-card-game">
-                            <img src="../img/zombies-shooter-part-2.png"
-                                title="Zombies Shooter: Part 2" alt="Zombies Shooter: Part 2" loading="lazy" />
-                            <span class="game-badge-featured speed">&#9889; HORDE WAR</span>
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Zombies Shooter: Part 2</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 11. Mine Shooter -->
-                <div class="throw-game">
-                    <a class="card-game" href="./mine-shooter.html" title="Mine Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/mine-shooter.png"
-                                title="Mine Shooter" alt="Mine Shooter" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Mine Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 12. FNaF Shooter -->
-                <div class="throw-game">
-                    <a class="card-game" href="./fnaf-shooter.html" title="FNaF Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/fnaf-shooter.png"
-                                title="FNaF Shooter" alt="FNaF Shooter" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">FNaF Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 13. Among Shooter -->
-                <div class="throw-game">
-                    <a class="card-game" href="./among-shooter-kill-impostor.html" title="Among Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/among-shooter-kill-impostor.png"
-                                title="Among Shooter" alt="Among Shooter" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Among Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 14. Johnny Trigger -->
-                <div class="throw-game">
-                    <a class="card-game" href="./johnny-trigger-action-shooter.html" title="Johnny Trigger">
-                        <figure class="image-card-game">
-                            <img src="../img/johnny-trigger-action-shooter.png"
-                                title="Johnny Trigger" alt="Johnny Trigger" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Johnny Trigger</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 15. Squid Shooter -->
-                <div class="throw-game">
-                    <a class="card-game" href="./squid-shooter.html" title="Squid Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/squid-shooter.png"
-                                title="Squid Shooter" alt="Squid Shooter" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Squid Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 16. Killstreak 3D Shooter -->
-                <div class="throw-game">
-                    <a class="card-game" href="./killstreak-3d-shooter.html" title="Killstreak 3D Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/killstreak-3d-shooter.png"
-                                title="Killstreak 3D Shooter" alt="Killstreak 3D Shooter" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Killstreak 3D Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 17. Apple Shooter Classic -->
-                <div class="throw-game">
-                    <a class="card-game" href="./apple-shooter.html" title="Apple Shooter Classic">
-                        <figure class="image-card-game">
-                            <img src="../img/apple-shooter.png"
-                                title="Apple Shooter Classic" alt="Apple Shooter Classic" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Apple Shooter Classic</span></div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 18. Pro Shooter -->
-                <div class="throw-game">
-                    <a class="card-game" href="./pro-shooter.html" title="Pro Shooter">
-                        <figure class="image-card-game">
-                            <img src="../img/pro-shooter.png"
-                                title="Pro Shooter" alt="Pro Shooter" loading="lazy" />
-                            <div class="game-card-hover-overlay">
-                                <div class="play-hint-btn"><svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg></div>
-                            </div>
-                        </figure>
-                        <div class="title-card-game">
-                            <div class="title-name"><span class="text-overflow">Pro Shooter</span></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Modern Dark Theme Footer -->
     <footer>
         <div class="container">
@@ -867,7 +711,7 @@
                         Welcome to <strong>Pixel Shooter</strong>, recognized among the top <strong>unblocked websites
                             for school</strong> and work! We provide students and gamers worldwide with 100% free, safe,
                         and unrestricted HTML5 <strong>unblocked</strong> games. Seamlessly bypass restrictive network
-                        firewalls on school Chromebooks, laptops, and mobile devicesâ€”no downloads, installations, or
+                        firewalls on school Chromebooks, laptops, and mobile devices &mdash; no downloads, installations, or
                         VPNs required.
                     </p>
                     <div class="footer-features">
@@ -884,10 +728,10 @@
                 <p class="footer-copy-text">&copy; 2026 <a href="../index.html">Pixel Shooter</a>. All rights reserved. The
                     best free online unblocked games for school.</p>
                 <ul class="footer-links-list">
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../privacy.html">Privacy</a></li>
-                    <li><a href="../terms.html">Terms</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../about.html">&#8505;&#65039; About</a></li>
+                    <li><a href="../privacy.html">&#128274; Privacy</a></li>
+                    <li><a href="../terms.html">&#128220; Terms</a></li>
+                    <li><a href="../contact.html">&#9993;&#65039; Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -895,62 +739,7 @@
     <a class="scroll" href="#top" id="back-to-top" title="Back to top" aria-label="Back to top">&uarr;</a>
 
     <!-- Interactive Game Scripts -->
-    <script>
-        function openFullScreen() {
-            let game = document.getElementById("iframehtml5");
-            if (!game) return;
-            if (game.requestFullscreen) {
-                game.requestFullscreen();
-            } else if (game.mozRequestFullScreen) {
-                game.mozRequestFullScreen();
-            } else if (game.webkitRequestFullscreen) {
-                game.webkitRequestFullscreen();
-            } else if (game.msRequestFullscreen) {
-                game.msRequestFullscreen();
-            }
-        }
-
-        function reloadGame() {
-            let iframe = document.getElementById("iframehtml5");
-            if (iframe) {
-                let currentSrc = iframe.src;
-                iframe.src = "";
-                setTimeout(function () {
-                    iframe.src = currentSrc;
-                }, 100);
-            }
-        }
-
-        function toggleTheater() {
-            let arena = document.querySelector(".game_play");
-            let btn = document.getElementById("btn-theater");
-            if (arena) {
-                arena.classList.toggle("theater-mode-active");
-                if (btn) {
-                    let isTheater = arena.classList.contains("theater-mode-active");
-                    btn.querySelector("span").textContent = isTheater ? "Exit Theater" : "Theater";
-                }
-            }
-        }
-
-        let isLiked = false;
-        let baseLikes = 1840;
-        function toggleLike() {
-            let btn = document.getElementById("btn-like");
-            let countEl = document.getElementById("like-count");
-            if (!btn || !countEl) return;
-            isLiked = !isLiked;
-            if (isLiked) {
-                btn.style.color = "#ec4899";
-                btn.style.borderColor = "#ec4899";
-                countEl.textContent = (baseLikes + 1).toLocaleString();
-            } else {
-                btn.style.color = "";
-                btn.style.borderColor = "";
-                countEl.textContent = baseLikes.toLocaleString();
-            }
-        }
-    </script>
+    <script src="../js/game-controls.js"></script>
     <script src="../js/search.js"></script>
 </body>
 

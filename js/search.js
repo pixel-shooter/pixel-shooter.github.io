@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Pixel Shooter - Fast Live Game Search
  * Real-time instant game search with dropdown preview, keyboard navigation, and on-page grid filtering.
  */
@@ -6,8 +6,41 @@
 (function () {
     // 63 Catalog games dataset
     const CATALOG_GAMES = [
+        { "title": "Bomb It 4", "href": "action/bomb-it-4.html", "img": "https://pixel-shooter.github.io/game-pixel/bomb-it-4/logo.png", "category": "Action" },
+        { "title": "Bomb It 5", "href": "action/bomb-it-5.html", "img": "https://pixel-shooter.github.io/game-pixel/bomb-it-5/logo.png", "category": "Action" },
+        { "title": "Bomb It 6", "href": "action/bomb-it-6.html", "img": "https://pixel-shooter.github.io/game-pixel/bomb-it-6/logo.png", "category": "Action" },
+        { "title": "Bomb It 7", "href": "action/bomb-it-7.html", "img": "https://pixel-shooter.github.io/game-pixel/bomb-it-7/logo.png", "category": "Action" },
+        { "title": "Fireboy and Watergirl 1: Forest Temple", "href": "action/fireboy-and-watergirl-1-forest-temple.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-and-watergirl-1-forest-temple/logo.png", "category": "Action" },
+        { "title": "Fireboy and Watergirl 7: And Friends", "href": "action/fireboy-and-watergirl-7-and-friends.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-and-watergirl-7-and-friends/logo.png", "category": "Action" },
+        { "title": "Fireboy and Watergirl 2: Light Temple", "href": "action/fireboy-water-2.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-water-2/logo.png", "category": "Action" },
+        { "title": "Fireboy and Watergirl 3: Ice Temple", "href": "action/fireboy-water-3.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-water-3/logo.png", "category": "Action" },
+        { "title": "Fireboy and Watergirl 4: Crystal Temple", "href": "action/fireboy-water-4.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-water-4/logo.png", "category": "Action" },
+        { "title": "Fireboy and Watergirl 5: Elements", "href": "action/fireboy-water-5.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-water-5/logo.png", "category": "Action" },
+        { "title": "Fireboy and Watergirl 6: Fairy Tales", "href": "action/fireboy-water-6.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-water-6/logo.png", "category": "Action" },
+        { "title": "Snail Bob 1", "href": "action/snail-bob-1-html5.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-1-html5/logo.png", "category": "Action" },
+        { "title": "Snail Bob 2", "href": "action/snail-bob-2-html5.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-2-html5/logo.png", "category": "Action" },
+        { "title": "Snail Bob 3: Egypt Journey", "href": "action/snail-bob-3.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-3/logo.png", "category": "Action" },
+        { "title": "Snail Bob 4: Space", "href": "action/snail-bob-4.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-4/logo.png", "category": "Action" },
+        { "title": "Snail Bob 5: Love Story", "href": "action/snail-bob-5-html5.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-5-html5/logo.png", "category": "Action" },
+        { "title": "Snail Bob 6: Winter Story", "href": "action/snail-bob-6.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-6/logo.png", "category": "Action" },
+        { "title": "Snail Bob 7: Fantasy Story", "href": "action/snail-bob-7.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-7/logo.png", "category": "Action" },
+        { "title": "Snail Bob 8: Island Story", "href": "action/snail-bob-8.html", "img": "https://pixel-shooter.github.io/game-pixel/snail-bob-8/logo.png", "category": "Action" },
+        { "title": "Vex 3", "href": "action/vex3.html", "img": "https://pixel-shooter.github.io/game-pixel/vex3/logo.png", "category": "Action" },
+        { "title": "Vex 4", "href": "action/vex4.html", "img": "https://pixel-shooter.github.io/game-pixel/vex4/logo.png", "category": "Action" },
+        { "title": "Vex 5", "href": "action/vex5.html", "img": "https://pixel-shooter.github.io/game-pixel/vex5/logo.png", "category": "Action" },
+        { "title": "Vex 6", "href": "action/vex6.html", "img": "https://pixel-shooter.github.io/game-pixel/vex6/logo.png", "category": "Action" },
+        { "title": "Vex 7", "href": "action/vex7.html", "img": "https://pixel-shooter.github.io/game-pixel/vex7/logo.png", "category": "Action" },
+        { "title": "Vex 8", "href": "action/vex-8.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-8/logo.png", "category": "Action" },
+        { "title": "Vex 9", "href": "action/vex-9.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-9/logo.png", "category": "Action" },
+        { "title": "Vex 10", "href": "action/vex-10.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-10/logo.png", "category": "Action" },
+        { "title": "Vex Hyper Dash", "href": "action/vex-hyper-dash.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-hyper-dash/logo.png", "category": "Action" },
+        { "title": "Vex Try To Fly", "href": "action/vex-try-to-fly.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-try-to-fly/logo.png", "category": "Action" },
+        { "title": "Vex X3M", "href": "action/vex-x3m.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-x3m/logo.png", "category": "Action" },
+        { "title": "Vex X3M 2", "href": "action/vex-x3m-2.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-x3m-2/logo.png", "category": "Action" },
+        { "title": "Vex X3M 3", "href": "action/vex-x3m-3.html", "img": "https://pixel-shooter.github.io/game-pixel/vex-x3m-3/logo.png", "category": "Action" },
+
         { "title": "Pixel Shooter", "href": "index.html", "img": "img/pixel-shooter.png", "category": "Shooting" },
-        { "title": "Archery 2", "href": "game/archery-2.html", "img": "img/archery-2.png", "category": "Shooting" },
+        { "title": "Archery 2", "href": "other/archery-2.html", "img": "img/archery-2.png", "category": "Shooting" },
         { "title": "Among Shooter: Kill Impostor", "href": "game/among-shooter-kill-impostor.html", "img": "img/among-shooter-kill-impostor.png", "category": "Shooting" },
         { "title": "Apple Shooter Remastered", "href": "game/apple-shooter-1.html", "img": "img/apple-shooter-1.png", "category": "Shooting" },
         { "title": "Apple Shooter Championship", "href": "game/apple-shooter-champ.html", "img": "img/apple-shooter-champ.png", "category": "Shooting" },
@@ -31,17 +64,17 @@
         { "title": "Time Shooter", "href": "game/time-shooter.html", "img": "img/time-shooter.png", "category": "Shooting" },
         { "title": "Zombie Shooter 3D", "href": "game/zombie-shooter-3d-1.html", "img": "img/zombie-shooter-3d-1.png", "category": "Shooting" },
         { "title": "Zombies Shooter: Part 2", "href": "game/zombies-shooter-part-2.html", "img": "img/zombies-shooter-part-2.png", "category": "Shooting" },
-        { "title": "Ball Beez", "href": "game/ballbeez.html", "img": "https://pixel-shooter.github.io/game-pixel/ballbeez/logo.png", "category": "Arcade" },
-        { "title": "Black Jump 1", "href": "game/black-jump-1.html", "img": "https://pixel-shooter.github.io/game-pixel/black-jump-1/logo.png", "category": "Action" },
-        { "title": "Blue Mushroom Cat Run", "href": "game/blue-mushroom-cat-run.html", "img": "https://pixel-shooter.github.io/game-pixel/blue-mushroom-cat-run/logo.png", "category": "Action" },
-        { "title": "Boxing Gang Stars", "href": "game/boxing-gang-stars.html", "img": "https://pixel-shooter.github.io/game-pixel/boxing-gang-stars/logo.png", "category": "Action" },
-        { "title": "Break Many Bricks", "href": "game/break-many-bricks.html", "img": "https://pixel-shooter.github.io/game-pixel/break-many-bricks/logo.png", "category": "Puzzle" },
-        { "title": "City Builder 1", "href": "game/city-builder-1.html", "img": "https://pixel-shooter.github.io/game-pixel/city-builder-1/logo.png", "category": "Arcade" },
-        { "title": "Crazy Dunk 1", "href": "game/crazy-dunk-1.html", "img": "https://pixel-shooter.github.io/game-pixel/crazy-dunk-1/logo.png", "category": "Arcade" },
-        { "title": "Cut 3d", "href": "game/cut-3d.html", "img": "https://pixel-shooter.github.io/game-pixel/cut-3d/logo.png", "category": "Arcade" },
-        { "title": "Drag Race 3d", "href": "game/drag-race-3d-1.html", "img": "https://pixel-shooter.github.io/game-pixel/drag-race-3d-1/logo.png", "category": "Car" },
+        { "title": "Ball Beez", "href": "other/ballbeez.html", "img": "https://pixel-shooter.github.io/game-pixel/ballbeez/logo.png", "category": "Arcade" },
+        { "title": "Black Jump 1", "href": "other/black-jump-1.html", "img": "https://pixel-shooter.github.io/game-pixel/black-jump-1/logo.png", "category": "Action" },
+        { "title": "Blue Mushroom Cat Run", "href": "other/blue-mushroom-cat-run.html", "img": "https://pixel-shooter.github.io/game-pixel/blue-mushroom-cat-run/logo.png", "category": "Action" },
+        { "title": "Boxing Gang Stars", "href": "other/boxing-gang-stars.html", "img": "https://pixel-shooter.github.io/game-pixel/boxing-gang-stars/logo.png", "category": "Action" },
+        { "title": "Break Many Bricks", "href": "other/break-many-bricks.html", "img": "https://pixel-shooter.github.io/game-pixel/break-many-bricks/logo.png", "category": "Puzzle" },
+        { "title": "City Builder 1", "href": "other/city-builder-1.html", "img": "https://pixel-shooter.github.io/game-pixel/city-builder-1/logo.png", "category": "Arcade" },
+        { "title": "Crazy Dunk 1", "href": "other/crazy-dunk-1.html", "img": "https://pixel-shooter.github.io/game-pixel/crazy-dunk-1/logo.png", "category": "Arcade" },
+        { "title": "Cut 3d", "href": "other/cut-3d.html", "img": "https://pixel-shooter.github.io/game-pixel/cut-3d/logo.png", "category": "Arcade" },
+        { "title": "Drag Race 3d", "href": "other/drag-race-3d-1.html", "img": "https://pixel-shooter.github.io/game-pixel/drag-race-3d-1/logo.png", "category": "Car" },
         { "title": "Draw Climber 2", "href": "game/draw-climber-2.html", "img": "https://pixel-shooter.github.io/game-pixel/draw-climber-2/logo.png", "category": "Action" },
-        { "title": "Egg Wars", "href": "game/egg-wars.html", "img": "https://pixel-shooter.github.io/game-pixel/egg-wars/logo.png", "category": "Action" },
+        { "title": "Egg Wars", "href": "other/egg-wars.html", "img": "https://pixel-shooter.github.io/game-pixel/egg-wars/logo.png", "category": "Action" },
         { "title": "Endless Siege", "href": "game/endless-siege.html", "img": "https://pixel-shooter.github.io/game-pixel/endless-siege/logo.png", "category": "Shooting" },
         { "title": "Fireboy and Watergirl 1 Forest Temple", "href": "game/fireboy-and-watergirl-1-forest-temple.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-and-watergirl-1-forest-temple/logo.png", "category": "Puzzle" },
         { "title": "Fireboy and Watergirl 2 Light Temple", "href": "game/fireboy-and-watergirl-2-light-temple.html", "img": "https://pixel-shooter.github.io/game-pixel/fireboy-and-watergirl-2-light-temple/logo.png", "category": "Puzzle" },
@@ -93,7 +126,7 @@
 
     function getRelativePrefix() {
         const path = window.location.pathname.replace(/\\/g, '/');
-        if (path.includes('/catology/') || path.includes('/game/')) {
+        if (path.includes('/catology/') || path.includes('/game/') || path.includes('/car/') || path.includes('/sports/') || path.includes('/puzzle/') || path.includes('/other/') || path.includes('/action/')) {
             return '../';
         }
         return './';
@@ -341,3 +374,4 @@
         });
     });
 })();
+

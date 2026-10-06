@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
 
 <head>
@@ -10,11 +10,24 @@
     <meta name="keywords"
         content="unblocked, unbloked, unblocked websites for school, unblocked games for school, unblocked games, play unblocked, unblocked games chromebook, unblocked games 76, unblocked games classroom 6x, free unblocked games">
     <link rel="canonical" href="https://pixel-shooter.github.io/" />
+
+    <!-- OpenGraph & Social Meta -->
+    <meta property="og:title" content="Pixel Shooter Unblocked - Free Online Shooting Game" />
+    <meta property="og:description"
+        content="Play Pixel Shooter free online. Enjoy fast-paced 2D multiplayer and singleplayer pixel combat on school Chromebooks with zero downloads or VPN." />
+    <meta property="og:image" content="https://pixel-shooter.github.io/img/logo.png" />
+    <meta property="og:type" content="game" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/modern-theme.css" />
+
+    <!-- Structured Data: VideoGame Schema -->
+    <script src="./js/game-schema.js"></script>
 </head>
 
-<body>
+<body class="category-shooting">
     <div id="top"></div>
     <header class="main-header">
         <div class="header-container">
@@ -69,12 +82,26 @@
                     </svg>
                     <span>Car</span>
                 </a>
+                <a class="nav-pill" href="./catology/sports.html" title="Sports Games">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z" />
+                    </svg>
+                    <span>Sports</span>
+                </a>
                 <a class="nav-pill" href="./catology/puzzle.html" title="Puzzle Games">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M19 13h-2v-2h2c1.1 0 2-.9 2-2s-.9-2-2-2h-2V5c0-1.1-.9-2-2-2h-2v2h-2V3H9c-1.1 0-2 .9-2 2v2H5c-1.1 0-2 .9-2 2s.9 2 2 2h2v2H5c-1.1 0-2 .9-2 2s.9 2 2 2h2v2c0 1.1.9 2 2 2h2v-2h2v2h2c1.1 0 2-.9 2-2v-2h2c1.1 0 2-.9 2-2s-.9-2-2-2z" />
                     </svg>
                     <span>Puzzle</span>
+                </a>
+                <a class="nav-pill" href="./catology/other.html" title="Other Games">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                    </svg>
+                    <span>Other</span>
                 </a>
             </nav>
 
@@ -89,7 +116,7 @@
                         <input type="text" id="game-search-input" class="search-input" placeholder="Search games..."
                             autocomplete="off" />
                         <button type="button" class="search-clear-btn" id="search-clear-btn" title="Clear search"
-                            aria-label="Clear">✕</button>
+                            aria-label="Clear">&times;</button>
                     </div>
                     <div class="search-dropdown" id="search-dropdown">
                         <div class="search-results-list" id="search-results-list"></div>
@@ -102,8 +129,8 @@
     <section class="game-hero-banner">
         <div class="banner-container">
             <div class="banner-badge-wrapper">
-                <span class="banner-badge">⚡ 100% UNBLOCKED</span>
-                <span class="banner-badge-dot">•</span>
+                <span class="banner-badge">&#9889; 100% UNBLOCKED</span>
+                <span class="banner-badge-dot">&bull;</span>
                 <span class="banner-badge-tag">UNBLOCKED WEBSITES FOR SCHOOL</span>
             </div>
             <h1 class="banner-game-title">
@@ -117,9 +144,9 @@
     </section>
     <div class="game_play">
         <div class="container">
-            <!-- 2-Column Game Arena -->
-            <div class="game-arena-grid">
-                <!-- Left: Compact, Sleek Game Player Card -->
+            <!-- Full-Width Game Arena -->
+            <div class="game-arena-grid single-player">
+                <!-- Full-Width Game Player Card -->
                 <div class="game-player-card">
                     <div class="game-iframe-wrapper">
                         <iframe class="iframe-default d-block" id="iframehtml5" title="Pixel Shooter"
@@ -134,11 +161,11 @@
                             <div class="game-title-group">
                                 <h1 class="game-main-title">
                                     Pixel Shooter
-                                    <span class="badge-tag hot">🔥 HOT</span>
-                                    <span class="badge-tag category">⚡ ACTION</span>
+                                    <span class="badge-tag hot">&#128293; HOT</span>
+                                    <span class="badge-tag category">&#9889; SHOOTING</span>
                                 </h1>
                                 <div class="game-rating-stars">
-                                    <span class="stars-icons">★★★★★</span>
+                                    <span class="stars-icons">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                                     <span>4.9 / 5.0 (1,420 votes)</span>
                                 </div>
                             </div>
@@ -172,165 +199,6 @@
                     </div>
                 </div>
 
-                <!-- Right: Similar Games Sidebar -->
-                <aside class="similar-games-sidebar">
-                    <div class="sidebar-header">
-                        <h2 class="sidebar-title">
-                            <svg class="sidebar-title-icon" viewBox="0 0 24 24">
-                                <path
-                                    d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
-                            </svg>
-                            SIMILAR GAMES
-                        </h2>
-                        <span class="sidebar-count-badge">8 Games</span>
-                    </div>
-                    <div class="similar-games-scroll">
-                        <a class="similar-card" href="./game/archery-2.html" title="Archery 2">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/archery-2/logo.png" alt="Archery 2"
-                                    loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Archery 2</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Action</span>
-                                    <span>★ 4.8</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./game/boxing-gang-stars.html" title="Boxing Gang Stars">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/boxing-gang-stars/logo.png"
-                                    alt="Boxing Gang Stars" loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Boxing Gang Stars</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Fighting</span>
-                                    <span>★ 4.7</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./game/egg-wars.html" title="Egg Wars">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/egg-wars/logo.png" alt="Egg Wars"
-                                    loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Egg Wars</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Shooter</span>
-                                    <span>★ 4.9</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./game/hero-tower-war.html" title="Hero Tower War">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/hero-tower-war/logo.png"
-                                    alt="Hero Tower War" loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Hero Tower War</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Strategy</span>
-                                    <span>★ 4.8</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./game/snowball-destroyer.html" title="Snowball Destroyer">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/snowball-destroyer/logo.png"
-                                    alt="Snowball Destroyer" loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Snowball Destroyer</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Casual</span>
-                                    <span>★ 4.6</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./game/crazy-dunk-1.html" title="Crazy Dunk">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/crazy-dunk-1/logo.png"
-                                    alt="Crazy Dunk" loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Crazy Dunk</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Sports</span>
-                                    <span>★ 4.7</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./game/drag-race-3d-1.html" title="Drag Race 3D">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/drag-race-3d-1/logo.png"
-                                    alt="Drag Race 3D" loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Drag Race 3D</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Racing</span>
-                                    <span>★ 4.8</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="similar-card" href="./game/blue-mushroom-cat-run.html" title="Blue Mushroom Cat Run">
-                            <div class="similar-card-thumb">
-                                <img src="https://pixel-shooter.github.io/game-pixel/blue-mushroom-cat-run/logo.png"
-                                    alt="Blue Mushroom Cat Run" loading="lazy" />
-                                <div class="similar-play-overlay">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="similar-card-info">
-                                <div class="similar-card-title">Blue Mushroom Cat Run</div>
-                                <div class="similar-card-meta">
-                                    <span class="similar-badge">Arcade</span>
-                                    <span>★ 4.7</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </aside>
             </div>
 
             <!-- SEO Unblocked Portal Information Section -->
@@ -359,10 +227,10 @@
                             systems.
                         </p>
                         <div class="seo-badges-group">
-                            <span class="seo-pill-tag">🔒 100% Secure HTTPS</span>
-                            <span class="seo-pill-tag">💻 Chromebook Ready</span>
-                            <span class="seo-pill-tag">⚡ Zero Lag & No Install</span>
-                            <span class="seo-pill-tag">🛡️ Firewall Friendly</span>
+                            <span class="seo-pill-tag">&#128274; 100% Secure HTTPS</span>
+                            <span class="seo-pill-tag">&#128187; Chromebook Ready</span>
+                            <span class="seo-pill-tag">&#9889; Zero Lag &amp; No Install</span>
+                            <span class="seo-pill-tag">&#128737; Firewall Friendly</span>
                         </div>
                     </article>
 
@@ -377,7 +245,7 @@
                         </div>
                         <ul class="seo-feature-list">
                             <li>
-                                <span class="seo-feature-icon">✓</span>
+                                <span class="seo-feature-icon">&#10003;</span>
                                 <div>
                                     <strong>Bypasses Network Filters:</strong> Hosted on trusted GitHub domains that
                                     stay accessible across most school network firewalls (GoGuardian, Securly,
@@ -385,21 +253,21 @@
                                 </div>
                             </li>
                             <li>
-                                <span class="seo-feature-icon">✓</span>
+                                <span class="seo-feature-icon">&#10003;</span>
                                 <div>
                                     <strong>Pure HTML5 Technology:</strong> No Adobe Flash, no executable files (.exe),
                                     and no administrative permissions needed.
                                 </div>
                             </li>
                             <li>
-                                <span class="seo-feature-icon">✓</span>
+                                <span class="seo-feature-icon">&#10003;</span>
                                 <div>
                                     <strong>Safe & Clean Environment:</strong> Carefully moderated content suitable for
                                     students and schools of all grade levels.
                                 </div>
                             </li>
                             <li>
-                                <span class="seo-feature-icon">✓</span>
+                                <span class="seo-feature-icon">&#10003;</span>
                                 <div>
                                     <strong>Instant One-Click Play:</strong> Click and play immediately without sign-up,
                                     registration, or subscription hassles.
@@ -414,59 +282,17 @@
     <div class="row" id="more-game">
         <div class="navplay-title navplay-title2">
             <div class="navplay-title-left">
-                <svg class="navplay-title-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <svg class="navplay-title-svg" viewBox="0 0 24 24" fill="currentColor">
                     <path
-                        d="M458.622 255.92l45.985-45.005c13.708-12.977 7.316-36.039-10.664-40.339l-62.65-15.99 17.661-62.015c4.991-17.838-11.829-34.663-29.661-29.671l-61.994 17.667-15.984-62.671C337.085.197 313.765-6.276 300.99 7.228L256 53.57 211.011 7.229c-12.63-13.351-36.047-7.234-40.325 10.668l-15.984 62.671-61.995-17.667C74.87 57.907 58.056 74.738 63.046 92.572l17.661 62.015-62.65 15.99C.069 174.878-6.31 197.944 7.392 210.915l45.985 45.005-45.985 45.004c-13.708 12.977-7.316 36.039 10.664 40.339l62.65 15.99-17.661 62.015c-4.991 17.838 11.829 34.663 29.661 29.671l61.994-17.667 15.984 62.671c4.439 18.575 27.696 24.018 40.325 10.668L256 458.61l44.989 46.001c12.5 13.488 35.987 7.486 40.325-10.668l15.984-62.671 61.994 17.667c17.836 4.994 34.651-11.837 29.661-29.671l-17.661-62.015 62.65-15.99c17.987-4.302 24.366-27.367 10.664-40.339l-45.984-45.004z" />
+                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                 </svg>
-                <span>ALL NEW GAMES</span>
+                <span>TOP TRENDING &amp; POPULAR UNBLOCKED GAMES</span>
             </div>
-            <span class="more-game-badge">32 Games</span>
         </div>
-        <div class="d-r-flex flow-game">
-            <div class="throw-game">
-                <a class="card-game" href="./game/archery-2.html" title="Archery 2">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/archery-2/logo.png" title="Archery 2"
-                            alt="Archery 2" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Archery 2</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/ballbeez.html" title="Ball Beez">
-                    <figure class="image-card-game">
-                        <img width="177" height="100" src="https://pixel-shooter.github.io/game-pixel/ballbeez/logo.png"
-                            title="Ball Beez" alt="Ball Beez" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Ball Beez</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/black-jump-1.html" title="Black Jump 1">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/black-jump-1/logo.png" title="Black Jump 1"
-                            alt="Black Jump 1" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Black Jump 1</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <div class="d-r-flex flow-game flow-game-shooting">
             <div class="throw-game featured-big">
-                <a class="card-game" href="./game/blue-mushroom-cat-run.html" title="Blue Mushroom Cat Run">
-                    <span class="featured-badge-pill hot">🔥 TRENDING</span>
+                <a class="card-game" href="./other/blue-mushroom-cat-run.html" title="Blue Mushroom Cat Run">
+                    <span class="featured-badge-pill hot">&#128293; TRENDING</span>
                     <figure class="image-card-game">
                         <img width="177" height="100"
                             src="https://pixel-shooter.github.io/game-pixel/blue-mushroom-cat-run/logo.png"
@@ -485,95 +311,50 @@
                 </a>
             </div>
             <div class="throw-game">
-                <a class="card-game" href="./game/boxing-gang-stars.html" title="Boxing Gang Stars">
+                <a class="card-game" href="./action/vex-x3m-3.html" title="Vex X3M 3">
+                    <span class="featured-badge-pill hot">&#128293; HOT</span>
                     <figure class="image-card-game">
                         <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/boxing-gang-stars/logo.png"
-                            title="Boxing Gang Stars" alt="Boxing Gang Stars" />
+                            src="https://pixel-shooter.github.io/game-pixel/vex-x3m-3/logo.png" title="Vex X3M 3"
+                            alt="Vex X3M 3" />
                     </figure>
                     <div class="title-card-game">
                         <div class="title-name">
-                            <span class="text-overflow">Boxing Gang Stars</span>
+                            <span class="text-overflow">Vex X3M 3</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="throw-game">
-                <a class="card-game" href="./game/break-many-bricks.html" title="Break Many Bricks">
+                <a class="card-game" href="./car/drive-mad.html" title="Drive Mad">
                     <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/break-many-bricks/logo.png"
-                            title="Break Many Bricks" alt="Break Many Bricks" />
+                        <img width="177" height="100" src="./img/drive-mad.png" title="Drive Mad" alt="Drive Mad" />
                     </figure>
                     <div class="title-card-game">
                         <div class="title-name">
-                            <span class="text-overflow">Break Many Bricks</span>
+                            <span class="text-overflow">Drive Mad</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="throw-game">
-                <a class="card-game" href="./game/city-builder-1.html" title="City Builder 1">
+                <a class="card-game" href="./sports/football-penalty-2026.html" title="Football Penalty 2026">
                     <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/city-builder-1/logo.png"
-                            title="City Builder 1" alt="City Builder 1" />
+                        <img width="177" height="100" src="./img/football-penalty-2026.png"
+                            title="Football Penalty 2026" alt="Football Penalty 2026" />
                     </figure>
                     <div class="title-card-game">
                         <div class="title-name">
-                            <span class="text-overflow">City Builder 1</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/crazy-dunk-1.html" title="Crazy Dunk 1">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/crazy-dunk-1/logo.png" title="Crazy Dunk 1"
-                            alt="Crazy Dunk 1" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Crazy Dunk 1</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/cut-3d.html" title="Cut 3d">
-                    <figure class="image-card-game">
-                        <img width="177" height="100" src="https://pixel-shooter.github.io/game-pixel/cut-3d/logo.png"
-                            title="Cut 3d" alt="Cut 3d" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Cut 3d</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/drag-race-3d-1.html" title="Drag Race 3d">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/drag-race-3d-1/logo.png"
-                            title="Drag Race 3d" alt="Drag Race 3d" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Drag Race 3d</span>
+                            <span class="text-overflow">Football Penalty 2026</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="throw-game featured-big">
-                <a class="card-game" href="./game/draw-to-smash.html" title="Draw To Smash">
-                    <span class="featured-badge-pill">⭐ TOP PICK</span>
+                <a class="card-game" href="./car/eggycargame.html" title="Eggy Car">
+                    <span class="featured-badge-pill hot">&#128293; TRENDING</span>
                     <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/draw-to-smash!/logo.png"
-                            title="Draw To Smash" alt="Draw To Smash" />
+                        <img width="177" height="100" src="./img/eggycargame.png" title="Eggy Car" alt="Eggy Car" />
                     </figure>
                     <div class="featured-play-hint">
                         <svg viewBox="0 0 24 24">
@@ -582,40 +363,284 @@
                     </div>
                     <div class="title-card-game">
                         <div class="title-name">
-                            <span class="text-overflow">Draw To Smash</span>
+                            <span class="text-overflow">Eggy Car</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="throw-game">
-                <a class="card-game" href="./game/dream-pet-link-2-1.html" title="Dream Pet Link 2">
+                <a class="card-game" href="./puzzle/level-devil.html" title="Level Devil">
+                    <span class="featured-badge-pill arcade">&#128520; TROLL HIT</span>
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/level-devil.png" title="Level Devil"
+                            alt="Level Devil" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Level Devil</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game featured-big">
+                <a class="card-game" href="./action/vex-10.html" title="Vex 10">
+                    <span class="featured-badge-pill hot">&#128293; TRENDING</span>
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="https://pixel-shooter.github.io/game-pixel/vex-10/logo.png"
+                            title="Vex 10" alt="Vex 10" />
+                    </figure>
+                    <div class="featured-play-hint">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Vex 10</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./sports/retro-bowl.html" title="Retro Bowl">
+                    <span class="featured-badge-pill classic">&#127944; RETRO</span>
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/retro-bowl.png" title="Retro Bowl" alt="Retro Bowl" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Retro Bowl</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./other/ballbeez.html" title="Ballbeez">
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="https://pixel-shooter.github.io/game-pixel/ballbeez/logo.png"
+                            title="Ballbeez" alt="Ballbeez" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Ballbeez</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./game/gunspin.html" title="GunSpin">
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/gunspin.png" title="GunSpin" alt="GunSpin" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">GunSpin</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./car/burnin-rubber-5-xs.html" title="Burnin Rubber 5 XS">
                     <figure class="image-card-game">
                         <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/dream-pet-link-2-1/logo.png"
-                            title="Dream Pet Link 2" alt="Dream Pet Link 2" />
+                            src="https://pixel-shooter.github.io/game-pixel/burnin-rubber-5-xs/logo.png"
+                            title="Burnin Rubber 5 XS" alt="Burnin Rubber 5 XS" />
                     </figure>
                     <div class="title-card-game">
                         <div class="title-name">
-                            <span class="text-overflow">Dream Pet Link 2</span>
+                            <span class="text-overflow">Burnin Rubber 5 XS</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="throw-game">
-                <a class="card-game" href="./game/egg-dash.html" title="Egg Dash">
+                <a class="card-game" href="./puzzle/duck-hunt.html" title="Duck Hunt">
                     <figure class="image-card-game">
-                        <img width="177" height="100" src="https://pixel-shooter.github.io/game-pixel/egg-dash/logo.png"
-                            title="Egg Dash" alt="Egg Dash" />
+                        <img width="177" height="100" src="./img/duck-hunt.png" title="Duck Hunt" alt="Duck Hunt" />
                     </figure>
                     <div class="title-card-game">
                         <div class="title-name">
-                            <span class="text-overflow">Egg Dash</span>
+                            <span class="text-overflow">Duck Hunt</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="throw-game">
-                <a class="card-game" href="./game/egg-wars.html" title="Egg Wars">
+                <a class="card-game" href="./car/mr-racer-car-racing.html" title="Mr Racer - Car Racing">
+                    <span class="featured-badge-pill hot">&#128663; SPEED</span>
+                    <figure class="image-card-game">
+                        <img width="177" height="100"
+                            src="https://pixel-shooter.github.io/game-pixel/mr-racer-car-racing/logo.png"
+                            title="Mr Racer - Car Racing" alt="Mr Racer - Car Racing" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Mr Racer - Car Racing</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./action/fireboy-water-6.html" title="Fireboy & Watergirl 6">
+                    <figure class="image-card-game">
+                        <img width="177" height="100"
+                            src="https://pixel-shooter.github.io/game-pixel/fireboy-water-6/logo.png"
+                            title="Fireboy & Watergirl 6" alt="Fireboy & Watergirl 6" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Fireboy & Watergirl 6</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./game/rooftop-snipers.html" title="Rooftop Snipers">
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/rooftop-snipers.png" title="Rooftop Snipers"
+                            alt="Rooftop Snipers" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Rooftop Snipers</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game featured-big">
+                <a class="card-game" href="./sports/retro-bowl-college.html" title="Retro Bowl College">
+                    <span class="featured-badge-pill hot">&#128293; TRENDING</span>
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/retro-bowl-college.png" title="Retro Bowl College"
+                            alt="Retro Bowl College" />
+                    </figure>
+                    <div class="featured-play-hint">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Retro Bowl College</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./car/drift-escape.html" title="Drift Escape">
+                    <figure class="image-card-game">
+                        <img width="177" height="100"
+                            src="https://pixel-shooter.github.io/game-pixel/drift-escape/logo.png" title="Drift Escape"
+                            alt="Drift Escape" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Drift Escape</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./car/2-player-dark-racing.html" title="2 Player Dark Racing">
+                    <figure class="image-card-game">
+                        <img width="177" height="100"
+                            src="https://pixel-shooter.github.io/game-pixel/2-player-dark-racing/logo.png"
+                            title="2 Player Dark Racing" alt="2 Player Dark Racing" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">2 Player Dark Racing</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./action/vex-hyper-dash.html" title="Vex Hyper Dash">
+                    <figure class="image-card-game">
+                        <img width="177" height="100"
+                            src="https://pixel-shooter.github.io/game-pixel/vex-hyper-dash/logo.png"
+                            title="Vex Hyper Dash" alt="Vex Hyper Dash" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Vex Hyper Dash</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./sports/boxing-random.html" title="Boxing Random">
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/boxing-random.png" title="Boxing Random"
+                            alt="Boxing Random" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Boxing Random</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game featured-big">
+                <a class="card-game" href="./sports/basketball-stars-2026.html" title="Basketball Stars 2026">
+                    <span class="featured-badge-pill hot">&#128293; TRENDING</span>
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/basketball-stars-2026.png"
+                            title="Basketball Stars 2026" alt="Basketball Stars 2026" />
+                    </figure>
+                    <div class="featured-play-hint">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Basketball Stars 2026</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./puzzle/block-toggle.html" title="Block Toggle">
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/block-toggle.png" title="Block Toggle"
+                            alt="Block Toggle" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Block Toggle</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./sports/volley-random.html" title="Volley Random">
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/volley-random.png" title="Volley Random"
+                            alt="Volley Random" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Volley Random</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./puzzle/tetris.html" title="Tetris">
+                    <span class="featured-badge-pill classic">&#129513; CLASSIC</span>
+                    <figure class="image-card-game">
+                        <img width="177" height="100" src="./img/tetris.png" title="Tetris" alt="Tetris" />
+                    </figure>
+                    <div class="title-card-game">
+                        <div class="title-name">
+                            <span class="text-overflow">Tetris</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="throw-game">
+                <a class="card-game" href="./other/egg-wars.html" title="Egg Wars">
                     <figure class="image-card-game">
                         <img width="177" height="100" src="https://pixel-shooter.github.io/game-pixel/egg-wars/logo.png"
                             title="Egg Wars" alt="Egg Wars" />
@@ -623,261 +648,6 @@
                     <div class="title-card-game">
                         <div class="title-name">
                             <span class="text-overflow">Egg Wars</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/fat-cat-life.html" title="Fat Cat Life">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/fat-cat-life/logo.png" title="Fat Cat Life"
-                            alt="Fat Cat Life" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Fat Cat Life</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/free-the-ball-1.html" title="Free The Ball 1">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/free-the-ball-1/logo.png"
-                            title="Free The Ball 1" alt="Free The Ball 1" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Free The Ball 1</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game featured-big">
-                <a class="card-game" href="./game/hero-tower-war.html" title="Hero Tower War">
-                    <span class="featured-badge-pill crown">👑 POPULAR</span>
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/hero-tower-war/logo.png"
-                            title="Hero Tower War" alt="Hero Tower War" />
-                    </figure>
-                    <div class="featured-play-hint">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
-                    </div>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Hero Tower War</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/home-pin-2.html" title="Home Pin 2">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/home-pin-2/logo.png" title="Home Pin 2"
-                            alt="Home Pin 2" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Home Pin 2</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/jinn-dash-1.html" title="Jinn Dash 1">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/jinn-dash-1/logo.png" title="Jinn Dash 1"
-                            alt="Jinn Dash 1" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Jinn Dash 1</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/jump-on-2.html" title="Jump On 2">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/jump-on-2/logo.png" title="Jump On 2"
-                            alt="Jump On 2" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Jump On 2</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/mafia-billiard-tricks.html" title="Mafia Billiard Tricks">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/mafia-billiard-tricks/logo.png"
-                            title="Mafia Billiard Tricks" alt="Mafia Billiard Tricks" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Mafia Billiard Tricks</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/marble-dash.html" title="Marble Dash">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/marble-dash/logo.png" title="Marble Dash"
-                            alt="Marble Dash" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Marble Dash</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/monster-collect-run.html" title="Monster Collect Run">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/monster-collect-run/logo.png"
-                            title="Monster Collect Run" alt="Monster Collect Run" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Monster Collect Run</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game featured-big">
-                <a class="card-game" href="./game/mr.-macagi-adventures.html" title="Mr Macagi Adventures">
-                    <span class="featured-badge-pill arcade">🎮 ARCADE HIT</span>
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/mr.-macagi-adventures/logo.png"
-                            title="Mr Macagi Adventures" alt="Mr Macagi Adventures" />
-                    </figure>
-                    <div class="featured-play-hint">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
-                    </div>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Mr Macagi Adventures</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/run-boys.html" title="Run Boys">
-                    <figure class="image-card-game">
-                        <img width="177" height="100" src="https://pixel-shooter.github.io/game-pixel/run-boys/logo.png"
-                            title="Run Boys" alt="Run Boys" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Run Boys</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/snowball-destroyer.html" title="Snowball Destroyer">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/snowball-destroyer/logo.png"
-                            title="Snowball Destroyer" alt="Snowball Destroyer" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Snowball Destroyer</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/sorting-sorcery.html" title="Sorting Sorcery">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/sorting-sorcery/logo.png"
-                            title="Sorting Sorcery" alt="Sorting Sorcery" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Sorting Sorcery</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/space-pet-link.html" title="Space Pet Link">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/space-pet-link/logo.png"
-                            title="Space Pet Link" alt="Space Pet Link" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Space Pet Link</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game featured-big">
-                <a class="card-game" href="./game/temple-jewels-1.html" title="Temple Jewels 1">
-                    <span class="featured-badge-pill classic">💎 CLASSIC</span>
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/temple-jewels-1/logo.png"
-                            title="Temple Jewels 1" alt="Temple Jewels 1" />
-                    </figure>
-                    <div class="featured-play-hint">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
-                    </div>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Temple Jewels 1</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/the-shape-1.html" title="The Shape 1">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/the-shape-1/logo.png" title="The Shape 1"
-                            alt="The Shape 1" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">The Shape 1</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="throw-game">
-                <a class="card-game" href="./game/trick-shot-world-challenge.html" title="Trick Shot World Challenge">
-                    <figure class="image-card-game">
-                        <img width="177" height="100"
-                            src="https://pixel-shooter.github.io/game-pixel/trick-shot-world-challenge/logo.png"
-                            title="Trick Shot World Challenge" alt="Trick Shot World Challenge" />
-                    </figure>
-                    <div class="title-card-game">
-                        <div class="title-name">
-                            <span class="text-overflow">Trick Shot World Challenge</span>
                         </div>
                     </div>
                 </a>
@@ -897,89 +667,37 @@
                         Welcome to <strong>Pixel Shooter</strong>, recognized among the top <strong>unblocked websites
                             for school</strong> and work! We provide students and gamers worldwide with 100% free, safe,
                         and unrestricted HTML5 <strong>unblocked</strong> games. Seamlessly bypass restrictive network
-                        firewalls on school Chromebooks, laptops, and mobile devices—no downloads, installations, or
+                        firewalls on school Chromebooks, laptops, and mobile devices &mdash; no downloads,
+                        installations, or
                         VPNs required.
                     </p>
                     <div class="footer-features">
-                        <span class="feature-tag">🏫 100% Unblocked for School</span>
-                        <span class="feature-tag">💻 Chromebook Compatible</span>
-                        <span class="feature-tag">🚀 No VPN or Download Needed</span>
-                        <span class="feature-tag">🛡️ Safe & Filter-Bypass Ready</span>
+                        <span class="feature-tag">&#127979; 100% Unblocked for School</span>
+                        <span class="feature-tag">&#128187; Chromebook Compatible</span>
+                        <span class="feature-tag">&#128640; No VPN or Download Needed</span>
+                        <span class="feature-tag">&#128737; Safe &amp; Filter-Bypass Ready</span>
                     </div>
                 </div>
 
             </div>
 
             <div class="footer-bottom-bar">
-                <p class="footer-copy-text">© 2026 <a href="./index.html">Pixel Shooter</a>. All rights reserved. The
+                <p class="footer-copy-text">&copy; 2026 <a href="./index.html">Pixel Shooter</a>. All rights reserved.
+                    The
                     best free online pixel shooting games.</p>
                 <ul class="footer-links-list">
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./privacy.html">Privacy</a></li>
-                    <li><a href="./terms.html">Terms</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">&#8505;&#65039; About</a></li>
+                    <li><a href="./privacy.html">&#128274; Privacy</a></li>
+                    <li><a href="./terms.html">&#128220; Terms</a></li>
+                    <li><a href="./contact.html">&#9993;&#65039; Contact</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-    <a class="scroll" href="#top" id="back-to-top" title="Back to top" aria-label="Back to top">↑</a>
+    <a class="scroll" href="#top" id="back-to-top" title="Back to top" aria-label="Back to top">&uarr;</a>
+
+    <script src="./js/game-controls.js"></script>
+    <script src="./js/search.js"></script>
 </body>
-<script>
-    function openFullScreen() {
-        let game = document.getElementById("iframehtml5");
-        if (!game) return;
-        if (game.requestFullscreen) {
-            game.requestFullscreen();
-        } else if (game.mozRequestFullScreen) { /* Firefox */
-            game.mozRequestFullScreen();
-        } else if (game.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-            game.webkitRequestFullscreen();
-        } else if (game.msRequestFullscreen) { /* IE/Edge */
-            game.msRequestFullscreen();
-        }
-    }
-
-    function reloadGame() {
-        let iframe = document.getElementById("iframehtml5");
-        if (iframe) {
-            let currentSrc = iframe.src;
-            iframe.src = "";
-            setTimeout(function () {
-                iframe.src = currentSrc;
-            }, 100);
-        }
-    }
-
-    function toggleTheater() {
-        let arena = document.querySelector(".game_play");
-        let btn = document.getElementById("btn-theater");
-        if (arena) {
-            arena.classList.toggle("theater-mode-active");
-            if (btn) {
-                let isTheater = arena.classList.contains("theater-mode-active");
-                btn.querySelector("span").textContent = isTheater ? "Exit Theater" : "Theater";
-            }
-        }
-    }
-
-    let isLiked = false;
-    let baseLikes = 1420;
-    function toggleLike() {
-        let btn = document.getElementById("btn-like");
-        let countEl = document.getElementById("like-count");
-        if (!btn || !countEl) return;
-        isLiked = !isLiked;
-        if (isLiked) {
-            btn.style.color = "#ec4899";
-            btn.style.borderColor = "#ec4899";
-            countEl.textContent = (baseLikes + 1).toLocaleString();
-        } else {
-            btn.style.color = "";
-            btn.style.borderColor = "";
-            countEl.textContent = "1.4K";
-        }
-    }
-</script>
-<script src="./js/search.js"></script>
 
 </html>
